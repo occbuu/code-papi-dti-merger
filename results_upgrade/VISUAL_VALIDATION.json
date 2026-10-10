@@ -1,0 +1,174 @@
+{
+  "geometry_keys": 63,
+  "mapped_groups": 34,
+  "choropleths": [
+    {
+      "field": "dti_gov",
+      "matched_geometry_keys": 63,
+      "observed_scores": 63,
+      "min": 0.5158,
+      "max": 0.8975
+    },
+    {
+      "field": "egovernance",
+      "matched_geometry_keys": 63,
+      "observed_scores": 61,
+      "min": 2.74164080619812,
+      "max": 4.059956073760986
+    },
+    {
+      "field": "service_facing",
+      "matched_geometry_keys": 63,
+      "observed_scores": 61,
+      "min": 0.741039901971817,
+      "max": 1.259151577949524
+    }
+  ],
+  "scatter": [
+    {
+      "figure": "scatter",
+      "outcome": "egovernance",
+      "year": 2020,
+      "n": 61,
+      "rho": 0.43062441336938057,
+      "slope": 2.647733363853949,
+      "intercept": 1.8385100205050733
+    },
+    {
+      "figure": "scatter",
+      "outcome": "egovernance",
+      "year": 2024,
+      "n": 61,
+      "rho": 0.2128503437334743,
+      "slope": 1.0664026669205444,
+      "intercept": 2.5840458749715642
+    },
+    {
+      "figure": "scatter",
+      "outcome": "service_facing",
+      "year": 2020,
+      "n": 61,
+      "rho": 0.15970597180099833,
+      "slope": 0.32574689124903966,
+      "intercept": 0.6921353593827816
+    },
+    {
+      "figure": "scatter",
+      "outcome": "service_facing",
+      "year": 2024,
+      "n": 61,
+      "rho": 0.4048122686409307,
+      "slope": 0.37702767945235066,
+      "intercept": 0.6434931032717498
+    }
+  ],
+  "coefficient_points": [
+    {
+      "figure": "coefficient",
+      "outcome": "egovernance",
+      "model": "TWFE controls",
+      "coef": 0.2348439941092938,
+      "ci_low": 0.0604436063164955,
+      "ci_high": 0.4092443819020922,
+      "n": 307
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "service_facing",
+      "model": "TWFE controls",
+      "coef": 0.2716185318456869,
+      "ci_low": 0.0819528883858823,
+      "ci_high": 0.4612841753054915,
+      "n": 307
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "internet_access",
+      "model": "TWFE controls",
+      "coef": 0.1638781058360685,
+      "ci_low": -0.0185304487965617,
+      "ci_high": 0.3462866604686987,
+      "n": 307
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "common_service_items",
+      "model": "TWFE controls",
+      "coef": 0.0804980799431121,
+      "ci_low": -0.1361036160535269,
+      "ci_high": 0.2970997759397511,
+      "n": 307
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "egovernance",
+      "model": "TWFE common lag sample",
+      "coef": 0.1722077748108003,
+      "ci_low": -0.0151334202212906,
+      "ci_high": 0.3595489698428914,
+      "n": 244
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "egovernance",
+      "model": "Lag common sample",
+      "coef": 0.0831103168653626,
+      "ci_low": -0.1233907981518473,
+      "ci_high": 0.2896114318825726,
+      "n": 244
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "egovernance",
+      "model": "Adjacent first differences + year FE",
+      "coef": 0.13451617643774,
+      "ci_low": -0.0206334138144343,
+      "ci_high": 0.2896657666899145,
+      "n": 239
+    },
+    {
+      "figure": "coefficient",
+      "outcome": "egovernance",
+      "model": "TWFE 2022-2024",
+      "coef": 0.0661919931976165,
+      "ci_low": -0.1395703776804163,
+      "ci_high": 0.2719543640756493,
+      "n": 184
+    }
+  ],
+  "aggregation": [
+    {
+      "outcome": "egovernance",
+      "actual": 0.1409728165540719,
+      "connected_mean": 0.1787269749314042,
+      "connected_q05": 0.1121743848139772,
+      "connected_q95": 0.252435018531651,
+      "unrestricted_mean": 0.3185296057204769
+    },
+    {
+      "outcome": "internet_access",
+      "actual": 0.1488714984759062,
+      "connected_mean": 0.1719552777939885,
+      "connected_q05": 0.1085612359275659,
+      "connected_q95": 0.2450447064181635,
+      "unrestricted_mean": 0.3278374142192378
+    },
+    {
+      "outcome": "service_facing",
+      "actual": 0.4468005519919817,
+      "connected_mean": 0.3518066787882448,
+      "connected_q05": 0.1807949860917507,
+      "connected_q95": 0.5079109863154688,
+      "unrestricted_mean": 0.3563329549202257
+    },
+    {
+      "outcome": "dti_gov",
+      "actual": 0.4545644268871608,
+      "connected_mean": 0.4337469608359429,
+      "connected_q05": 0.290878921315599,
+      "connected_q95": 0.5698146848889097,
+      "unrestricted_mean": 0.3977242382745349
+    }
+  ],
+  "geometry_note": "Stored historical 2008 geometry; not an official 2025 survey."
+}

@@ -1,0 +1,449 @@
+{
+  "component_reconstruction_max_error": 3.5762786954052217e-07,
+  "endpoint_changes": [
+    {
+      "outcome": "egovernance",
+      "n": 61,
+      "rho2020": 0.43062441336938057,
+      "rho2024": 0.2128503437334743,
+      "delta": -0.21777406963590626,
+      "ci_low": -0.5155638095941164,
+      "ci_high": 0.09002486903982856,
+      "bootstrap_draws": 10000
+    },
+    {
+      "outcome": "service_facing",
+      "n": 61,
+      "rho2020": 0.15970597180099833,
+      "rho2024": 0.4048122686409307,
+      "delta": 0.24510629683993235,
+      "ci_low": -0.08818423197970864,
+      "ci_high": 0.5730941753079976,
+      "bootstrap_draws": 10000
+    },
+    {
+      "outcome": "internet_access",
+      "n": 61,
+      "rho2020": 0.39762556356679013,
+      "rho2024": 0.1312004230565838,
+      "delta": -0.2664251405102063,
+      "ci_low": -0.5596095301125082,
+      "ci_high": 0.029435401678696713,
+      "bootstrap_draws": 10000
+    },
+    {
+      "outcome": "common_service_items",
+      "n": 61,
+      "rho2020": 0.3023043668213268,
+      "rho2024": 0.22823902696985723,
+      "delta": -0.07406533985146954,
+      "ci_low": -0.42727444297948514,
+      "ci_high": 0.2730016756751324,
+      "bootstrap_draws": 10000
+    }
+  ],
+  "wild_cluster": [
+    {
+      "outcome": "egovernance",
+      "coef": 0.23484399410929316,
+      "t_stat": 2.636009798158787,
+      "p_wild": 0.0076,
+      "draws": 4999,
+      "clusters": 63
+    },
+    {
+      "outcome": "service_facing",
+      "coef": 0.2716185318456862,
+      "t_stat": 2.8034043129226784,
+      "p_wild": 0.0036,
+      "draws": 4999,
+      "clusters": 63
+    },
+    {
+      "outcome": "internet_access",
+      "coef": 0.1638781058360678,
+      "t_stat": 1.7586958628018026,
+      "p_wild": 0.066,
+      "draws": 4999,
+      "clusters": 63
+    },
+    {
+      "outcome": "common_service_items",
+      "coef": 0.08049807994311181,
+      "t_stat": 0.7275095141027995,
+      "p_wild": 0.4252,
+      "draws": 4999,
+      "clusters": 63
+    }
+  ],
+  "prediction": [
+    {
+      "outcome": "egovernance",
+      "model": "Controls",
+      "r2_mean": 0.4348022866635507,
+      "r2_split_sd": 0.022958305220805893,
+      "rmse_mean": 0.26300668315549475,
+      "n": 184
+    },
+    {
+      "outcome": "egovernance",
+      "model": "Controls + DTI",
+      "r2_mean": 0.43254425348750625,
+      "r2_split_sd": 0.018863340711320398,
+      "rmse_mean": 0.2635459571074725,
+      "n": 184
+    },
+    {
+      "outcome": "egovernance",
+      "model": "DTI",
+      "r2_mean": 0.22712258151335657,
+      "r2_split_sd": 0.01872472335249605,
+      "rmse_mean": 0.30758748785754786,
+      "n": 184
+    },
+    {
+      "outcome": "service_facing",
+      "model": "Controls",
+      "r2_mean": 0.12205477566309478,
+      "r2_split_sd": 0.009494239180206338,
+      "rmse_mean": 0.09323345166377203,
+      "n": 184
+    },
+    {
+      "outcome": "service_facing",
+      "model": "Controls + DTI",
+      "r2_mean": 0.12754354553481748,
+      "r2_split_sd": 0.009784408933382694,
+      "rmse_mean": 0.09294146633163303,
+      "n": 184
+    },
+    {
+      "outcome": "service_facing",
+      "model": "DTI",
+      "r2_mean": 0.16355097798763377,
+      "r2_split_sd": 0.006703503264373854,
+      "rmse_mean": 0.09100391328597937,
+      "n": 184
+    }
+  ],
+  "incremental_validation": [
+    {
+      "outcome": "egovernance",
+      "delta_mse_combined_minus_controls": 0.0005218586719257072,
+      "ci_low": -0.002821343607711206,
+      "ci_high": 0.003961487551256619,
+      "clusters": 63,
+      "interpretation": "equal-province mean loss, conditional on fitted CV models"
+    },
+    {
+      "outcome": "service_facing",
+      "delta_mse_combined_minus_controls": -1.508581165467594e-05,
+      "ci_low": -0.0003424430395640233,
+      "ci_high": 0.00031623097692889447,
+      "clusters": 63,
+      "interpretation": "equal-province mean loss, conditional on fitted CV models"
+    }
+  ],
+  "main_models": [
+    {
+      "outcome": "egovernance",
+      "model": "TWFE controls",
+      "term": "z_dti_gov",
+      "coef": 0.23484399410929385,
+      "se": 0.08852511147943143,
+      "p": 0.008523270379828807,
+      "ci_low": 0.06044360631649551,
+      "ci_high": 0.4092443819020922,
+      "n": 307,
+      "clusters": 63,
+      "r2_twfe": 0.0508501162077204,
+      "partial_r2_first_regressor": 0.047631311529512166
+    },
+    {
+      "outcome": "service_facing",
+      "model": "TWFE controls",
+      "term": "z_dti_gov",
+      "coef": 0.27161853184568696,
+      "se": 0.09627370927090693,
+      "p": 0.005190016335846925,
+      "ci_low": 0.08195288838588238,
+      "ci_high": 0.46128417530549154,
+      "n": 307,
+      "clusters": 63,
+      "r2_twfe": 0.04803312909457047,
+      "partial_r2_first_regressor": 0.039763607227009
+    },
+    {
+      "outcome": "internet_access",
+      "model": "TWFE controls",
+      "term": "z_dti_gov",
+      "coef": 0.1638781058360685,
+      "se": 0.09259003284350696,
+      "p": 0.07802958140789862,
+      "ci_low": -0.018530448796561766,
+      "ci_high": 0.3462866604686987,
+      "n": 307,
+      "clusters": 63,
+      "r2_twfe": 0.027736039882018226,
+      "partial_r2_first_regressor": 0.024641209999533897
+    },
+    {
+      "outcome": "common_service_items",
+      "model": "TWFE controls",
+      "term": "z_dti_gov",
+      "coef": 0.0804980799431121,
+      "se": 0.10994636839636764,
+      "p": 0.4647987859848257,
+      "ci_low": -0.13610361605352694,
+      "ci_high": 0.2970997759397511,
+      "n": 307,
+      "clusters": 63,
+      "r2_twfe": 0.02423965938175554,
+      "partial_r2_first_regressor": 0.003474781481031086
+    }
+  ],
+  "dispersion2024": [
+    {
+      "year": 2024,
+      "var": "egovernance",
+      "metric": "variance",
+      "n": 61,
+      "total": 0.11620711977791057,
+      "between": 0.09982507479918211,
+      "within": 0.016382044978728458,
+      "within_share": 0.14097281655407198
+    },
+    {
+      "year": 2024,
+      "var": "egovernance",
+      "metric": "theil",
+      "n": 61,
+      "total": 0.004798367960419357,
+      "between": 0.004096141459970375,
+      "within": 0.000702226500448982,
+      "within_share": 0.1463469467622092
+    },
+    {
+      "year": 2024,
+      "var": "service_facing",
+      "metric": "variance",
+      "n": 61,
+      "total": 0.012580643701511083,
+      "between": 0.006959605151261483,
+      "within": 0.005621038550249599,
+      "within_share": 0.4468005519919817
+    },
+    {
+      "year": 2024,
+      "var": "service_facing",
+      "metric": "theil",
+      "n": 61,
+      "total": 0.006956536404515271,
+      "between": 0.003942877636038679,
+      "within": 0.003013658768476592,
+      "within_share": 0.4332125346919079
+    },
+    {
+      "year": 2024,
+      "var": "internet_access",
+      "metric": "variance",
+      "n": 61,
+      "total": 0.07622177393461547,
+      "between": 0.0648745242324775,
+      "within": 0.011347249702137976,
+      "within_share": 0.14887149847590622
+    },
+    {
+      "year": 2024,
+      "var": "internet_access",
+      "metric": "theil",
+      "n": 61,
+      "total": 0.005930852628727936,
+      "between": 0.005011997595815804,
+      "within": 0.0009188550329121328,
+      "within_share": 0.15492798260765603
+    },
+    {
+      "year": 2024,
+      "var": "dti_gov",
+      "metric": "variance",
+      "n": 61,
+      "total": 0.00720908725263131,
+      "between": 0.003932092637259422,
+      "within": 0.003276994615371888,
+      "within_share": 0.4545644268871608
+    },
+    {
+      "year": 2024,
+      "var": "dti_gov",
+      "metric": "theil",
+      "n": 61,
+      "total": 0.006294456429792159,
+      "between": 0.0033743427235064837,
+      "within": 0.002920113706285675,
+      "within_share": 0.46391832858903376
+    },
+    {
+      "year": 2024,
+      "var": "dti_total",
+      "metric": "variance",
+      "n": 61,
+      "total": 0.007382607390440646,
+      "between": 0.005018229447477955,
+      "within": 0.0023643779429626914,
+      "within_share": 0.3202632644428852
+    },
+    {
+      "year": 2024,
+      "var": "dti_total",
+      "metric": "theil",
+      "n": 61,
+      "total": 0.007295028859888412,
+      "between": 0.004875083075135752,
+      "within": 0.0024199457847526593,
+      "within_share": 0.331725320246324
+    }
+  ],
+  "benchmarks2024": [
+    {
+      "year": 2024,
+      "var": "egovernance",
+      "metric": "variance",
+      "scheme": "unrestricted",
+      "n": 61,
+      "observed": 0.14097281655407198,
+      "mean": 0.31852960572047695,
+      "q05": 0.1990093952835964,
+      "q95": 0.4586784781930181,
+      "p_lower_mc": 0.004199160167966407,
+      "p_upper_mc": 0.996000799840032,
+      "draws": 5000
+    },
+    {
+      "year": 2024,
+      "var": "egovernance",
+      "metric": "variance",
+      "scheme": "connected_local_chains",
+      "n": 61,
+      "observed": 0.14097281655407198,
+      "mean": 0.17872697493140427,
+      "q05": 0.11217438481397722,
+      "q95": 0.252435018531651,
+      "p_lower_mc": 0.19095226193451637,
+      "p_upper_mc": 0.8092976755811048,
+      "draws": 4000
+    },
+    {
+      "year": 2024,
+      "var": "service_facing",
+      "metric": "variance",
+      "scheme": "unrestricted",
+      "n": 61,
+      "observed": 0.4468005519919817,
+      "mean": 0.35633295492022576,
+      "q05": 0.2077311367631897,
+      "q95": 0.5237333681944242,
+      "p_lower_mc": 0.8190361927614477,
+      "p_upper_mc": 0.1811637672465507,
+      "draws": 5000
+    },
+    {
+      "year": 2024,
+      "var": "service_facing",
+      "metric": "variance",
+      "scheme": "connected_local_chains",
+      "n": 61,
+      "observed": 0.4468005519919817,
+      "mean": 0.35180667878824484,
+      "q05": 0.1807949860917507,
+      "q95": 0.5079109863154688,
+      "p_lower_mc": 0.8102974256435891,
+      "p_upper_mc": 0.189952511872032,
+      "draws": 4000
+    },
+    {
+      "year": 2024,
+      "var": "internet_access",
+      "metric": "variance",
+      "scheme": "unrestricted",
+      "n": 61,
+      "observed": 0.14887149847590622,
+      "mean": 0.32783741421923784,
+      "q05": 0.20941955965316364,
+      "q95": 0.46176031408685536,
+      "p_lower_mc": 0.002999400119976005,
+      "p_upper_mc": 0.9972005598880224,
+      "draws": 5000
+    },
+    {
+      "year": 2024,
+      "var": "internet_access",
+      "metric": "variance",
+      "scheme": "connected_local_chains",
+      "n": 61,
+      "observed": 0.14887149847590622,
+      "mean": 0.17195527779398856,
+      "q05": 0.10856123592756596,
+      "q95": 0.24504470641816356,
+      "p_lower_mc": 0.31992001999500125,
+      "p_upper_mc": 0.6803299175206199,
+      "draws": 4000
+    },
+    {
+      "year": 2024,
+      "var": "dti_gov",
+      "metric": "variance",
+      "scheme": "unrestricted",
+      "n": 61,
+      "observed": 0.4545644268871608,
+      "mean": 0.39772423827453496,
+      "q05": 0.2559917763460917,
+      "q95": 0.547763998910506,
+      "p_lower_mc": 0.740251949610078,
+      "p_upper_mc": 0.2599480103979204,
+      "draws": 5000
+    },
+    {
+      "year": 2024,
+      "var": "dti_gov",
+      "metric": "variance",
+      "scheme": "connected_local_chains",
+      "n": 61,
+      "observed": 0.4545644268871608,
+      "mean": 0.43374696083594294,
+      "q05": 0.290878921315599,
+      "q95": 0.5698146848889097,
+      "p_lower_mc": 0.5843539115221195,
+      "p_upper_mc": 0.4158960259935016,
+      "draws": 4000
+    },
+    {
+      "year": 2024,
+      "var": "dti_total",
+      "metric": "variance",
+      "scheme": "unrestricted",
+      "n": 61,
+      "observed": 0.3202632644428852,
+      "mean": 0.33188706439813825,
+      "q05": 0.2076434794903264,
+      "q95": 0.4754421985457329,
+      "p_lower_mc": 0.47390521895620874,
+      "p_upper_mc": 0.5262947410517896,
+      "draws": 5000
+    },
+    {
+      "year": 2024,
+      "var": "dti_total",
+      "metric": "variance",
+      "scheme": "connected_local_chains",
+      "n": 61,
+      "observed": 0.3202632644428852,
+      "mean": 0.34378341841833615,
+      "q05": 0.22415028223575617,
+      "q95": 0.46081121219750154,
+      "p_lower_mc": 0.3691577105723569,
+      "p_upper_mc": 0.6310922269432642,
+      "draws": 4000
+    }
+  ]
+}

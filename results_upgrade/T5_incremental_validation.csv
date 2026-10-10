@@ -1,0 +1,3 @@
+﻿outcome,delta_mse_combined_minus_controls,ci_low,ci_high,clusters,interpretation
+egovernance,0.0005218586719257072,-0.002821343607711206,0.003961487551256619,63,"equal-province mean loss, conditional on fitted CV models"
+service_facing,-1.508581165467594e-05,-0.0003424430395640233,0.00031623097692889447,63,"equal-province mean loss, conditional on fitted CV models"

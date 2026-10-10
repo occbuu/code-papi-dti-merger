@@ -1,0 +1,66 @@
+﻿year,item,label,available,source,sheet,row,scale,observed_n,eligible_observed_n
+2020,portal_access,Access to E-Government Portals,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,170.0,0.33-3.33 điểm,63,63
+2020,internet_access,Access to the Internet,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,174.0,0.33-3.33 điểm,63,63
+2020,responsiveness,E-Reponsiveness of Provincial Authorities*,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,177.0,0.33-3.33 điểm,63,63
+2020,info_certification,Access to Adequate Information about Certification Procedures Online,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,171.0,0%-100%,63,63
+2020,info_land,Access to Adequate Information about Land Use Rights Certification Procedures On,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,173.0,0%-100%,63,63
+2020,internet_news,Proportion of Respondents that Get Access to Information from the Internet,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,175.0,0%-100%,63,63
+2020,internet_home,Proportion of Respondents that Get Access to the Internet at Home,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,176.0,0%-100%,63,63
+2020,portal_personal_papers,Proportion of Respondents Who Used Local Government E-Service Portal,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,178.0,0%-100%,63,63
+2020,portal_user_friendly,Proportion of Respondents that Knows Provincial Website and Thinks It is User-Friendly,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,179.0,0%-100%,63,63
+2020,draft_comments,Proportion of Respondents Aware that Province Posted Draft Regulation for Comments,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,180.0,0%-100%,63,63
+2020,portal_general_use,Used Online Government Service Portal,False,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,,,0,0
+2020,online_payment,Able to Pay for Service Online,False,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,,,0,0
+2020,construction_info,Access to Adequate Information about Construction Permit Procedures Online,True,2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx,2020_VIE_ENG,172.0,0%-100%,63,63
+2021,portal_access,Access to E-Government Portals*,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,155.0,0.33-3.33 điểm/points,60,60
+2021,internet_access,Access to the Internet,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,158.0,0.33-3.33 điểm/points,60,60
+2021,responsiveness,E-Reponsiveness of Provincial Authorities,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,161.0,0.33-3.33 điểm/points,60,60
+2021,info_certification,Access to Adequate Information about Certification Procedures Online,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,156.0,0%-100%,60,60
+2021,info_land,Access to Adequate Information about Land Use Rights Certification Procedures On,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,157.0,0%-100%,60,60
+2021,internet_news,Proportion of Respondents that Get Access to Information from the Internet,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,159.0,0%-100%,60,60
+2021,internet_home,Proportion of Respondents that Get Access to the Internet at Home,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,160.0,0%-100%,60,60
+2021,portal_personal_papers,Proportion of Respondents Who Used Local Government E-Service Portal,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,162.0,0%-100%,60,60
+2021,portal_user_friendly,Proportion of Respondents that Knows Provincial Website and Thinks It is User-Friendly,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,163.0,0%-100%,60,60
+2021,draft_comments,Proportion of Respondents Aware that Province Posted Draft Regulation for Comments,True,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,164.0,0%-100%,60,60
+2021,portal_general_use,Used Online Government Service Portal,False,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,,,0,0
+2021,online_payment,Able to Pay for Service Online,False,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,,,0,0
+2021,construction_info,Access to Adequate Information about Construction Permit Procedures Online,False,1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2021_VIE_ENG,,,0,0
+2022,portal_access,Access to E-Government Portals*,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,155.0,0.33-3.33 điểm/points,62,62
+2022,internet_access,Access to the Internet,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,158.0,0.33-3.33 điểm/points,62,62
+2022,responsiveness,E-Reponsiveness of Provincial Authorities,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,161.0,0.33-3.33 điểm/points,62,62
+2022,info_certification,Access to Adequate Information about Certification Procedures Online,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,156.0,0%-100%,63,62
+2022,info_land,Access to Adequate Information about Land Use Rights Certification Procedures On,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,157.0,0%-100%,63,62
+2022,internet_news,Proportion of Respondents that Get Access to Information from the Internet,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,159.0,0%-100%,63,62
+2022,internet_home,Proportion of Respondents that Get Access to the Internet at Home,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,160.0,0%-100%,63,62
+2022,portal_personal_papers,Proportion of Respondents Who Used Local Government E-Service Portal,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,162.0,0%-100%,63,62
+2022,portal_user_friendly,Proportion of Respondents that Knows Provincial Website and Thinks It is User-Friendly,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,163.0,0%-100%,62,62
+2022,draft_comments,Proportion of Respondents Aware that Province Posted Draft Regulation for Comments,True,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,164.0,0%-100%,62,62
+2022,portal_general_use,Used Online Government Service Portal,False,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,,,0,0
+2022,online_payment,Able to Pay for Service Online,False,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,,,0,0
+2022,construction_info,Access to Adequate Information about Construction Permit Procedures Online,False,2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx,2022_VIE_ENG,,,0,0
+2023,portal_access,Access to E-Government Portals,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,151.0,0.33-3.33 điểm/points,61,61
+2023,internet_access,Access to the Internet,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,154.0,0.33-3.33 điểm/points,61,61
+2023,responsiveness,E-Reponsiveness of Provincial Authorities,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,157.0,0.33-3.33 điểm/points,61,61
+2023,info_certification,Access to Adequate Information about Certification Procedures Online,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,152.0,0%-100%,61,61
+2023,info_land,Access to Adequate Information about Land Use Rights Certification Procedures On,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,153.0,0%-100%,61,61
+2023,internet_news,Proportion of Respondents that Get Access to Information from the Internet,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,155.0,0%-100%,61,61
+2023,internet_home,Proportion of Respondents that Get Access to the Internet at Home,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,156.0,0%-100%,61,61
+2023,portal_personal_papers,Proportion of Respondents Who Used Local Government E-Service Portal,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,158.0,0%-100%,61,61
+2023,portal_user_friendly,Proportion of Respondents that Knows Provincial Website and Thinks It is User-Friendly,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,159.0,0%-100%,61,61
+2023,draft_comments,Proportion of Respondents Aware that Province Posted Draft Regulation for Comments,True,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,160.0,0%-100%,61,61
+2023,portal_general_use,Used Online Government Service Portal,False,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,,,0,0
+2023,online_payment,Able to Pay for Service Online,False,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,,,0,0
+2023,construction_info,Access to Adequate Information about Construction Permit Procedures Online,False,2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,2023_VIE_ENG,,,0,0
+2024,portal_access,Access to E-Government Portals,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,149.0,0.33-3.33 điểm/points,61,61
+2024,internet_access,Access to the Internet,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,152.0,0.33-3.33 điểm/points,61,61
+2024,responsiveness,E-Reponsiveness of Provincial Authorities,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,155.0,0.33-3.33 điểm/points,61,61
+2024,info_certification,Access to Adequate Information about Certification Procedures Online,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,150.0,0%-100%,63,61
+2024,info_land,Access to Adequate Information about Land Use Rights Certification Procedures On,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,151.0,0%-100%,63,61
+2024,internet_news,Proportion of Respondents that Get Access to Information from the Internet,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,153.0,0%-100%,63,61
+2024,internet_home,Proportion of Respondents that Get Access to the Internet at Home,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,154.0,0%-100%,63,61
+2024,portal_personal_papers,Proportion of Respondents Who Used Local Government E-Service Portal,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,156.0,0%-100%,63,61
+2024,portal_user_friendly,Proportion of Respondents that Knows Provincial Website and Thinks It is User-Friendly,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,157.0,0%-100%,63,61
+2024,draft_comments,Proportion of Respondents Aware that Province Posted Draft Regulation for Comments,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,158.0,0%-100%,63,61
+2024,portal_general_use,Used Online Government Service Portal,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,159.0,0%-100%,63,61
+2024,online_payment,Able to Pay for Service Online,True,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,160.0,0%-100%,63,61
+2024,construction_info,Access to Adequate Information about Construction Permit Procedures Online,False,2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,2024_PAPI_VIE_ENG,,,0,0

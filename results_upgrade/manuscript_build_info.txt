@@ -1,0 +1,2 @@
+LaTeX-source token count for main sections (includes commands/tables): 6081
+All numeric tokens and tables generated from results_upgrade.

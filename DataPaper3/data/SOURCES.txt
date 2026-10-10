@@ -1,0 +1,91 @@
+P3 — PAPI x DTI x sáp nhập tỉnh — NGUỒN DỮ LIỆU
+
+CẤU TRÚC THƯ MỤC
+  data/     file notebook đọc (đúng tên theo hướng dẫn) + SOURCES.txt  -> BẮT BUỘC upload
+  raw/      file gốc đã tải về (để kiểm chứng / Data availability)    -> nên upload
+  scripts/  code tải và xử lý (chạy từ bất kỳ đâu: python scripts/<tên>.py)
+  _extra/   file đối chiếu, log, file trung gian                     -> có thể bỏ khi upload
+Đường dẫn "raw/..." và "scripts/..." dưới đây tính từ thư mục PaperN/.
+
+Ngày thu thập: 2026-09-25
+
+1) papi_long.csv  (province, province_code_pre2025, year, dimension, score, ci_low, ci_high, variance, source)
+   - Nguồn chính: PAPI provincial data 2018–2024, CECODES, VFF-CRT, RTA & UNDP,
+     https://papi.org.vn/eng/documents-and-data-download — tải thủ công qua trình duyệt ngày 2026-09-25
+     -> raw/papi_official/:
+        PAPI-2018-data.xlsx, PAPI2019-data.xlsx,
+        2020PAPI_ProvincialIndicators_BangChiTieuCapTinh-1.xlsx, 1.2021PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx,
+        2022PAPI_ProvincialIndicators_BangChiTieuCapTinh-2.xlsx, 2023PAPI_ProvincialIndicators_BangChiTieuCapTinh..xlsx,
+        2024PAPI_ProvincialIndicators_BangChiTieuCapTinh.xlsx  (+ PAPI-2017-data-1.xlsx, chưa dùng)
+   - Nguồn bổ sung: bản mirror nguyên trạng trên Hugging Face
+     https://huggingface.co/datasets/letrinhan/vn-provinces-papi (raw/, cập nhật 2026-09-20) -> raw/papi_hf_mirror/
+     Dùng CHỈ cho các trường file chính thức tải về không có: điểm tổng 2018; ci_low/ci_high và variance 2019
+     (cột source = "official+mirror"). 2020, 2021, 2023: file mirror trùng byte với file chính thức (SHA-256).
+     2018, 2019, 2022, 2024: phiên bản file khác nhưng mọi giá trị có ở cả hai nguồn đều trùng khớp
+     (score 3.829, CI 306+306, variance 504 giá trị; sai lệch 0).
+   - Xử lý: scripts/build_papi_long.py. score = điểm chiều nội dung (1–10) hoặc tổng không trọng số (10–80).
+     ci_low/ci_high = KTC 95% chính thức, chỉ có cho điểm tổng từ 2019.
+     variance = phương sai công bố cho điểm chiều nội dung (chỉ có 2019–2020).
+     Ô "KCDL" và giá trị 0 (không thể có trên thang 1–10/10–80) được coi là thiếu.
+     province_code_pre2025 = mã tỉnh trước 1/7/2025 (2018–2019 gán theo tên từ file 2020).
+   - Giá trị thiếu theo bản gốc: 2018 Đồng Tháp & Quảng Ninh (transparency, anticorruption, total);
+     2021 Bắc Giang, Bắc Ninh, Quảng Ninh (cả năm); 2022 Bắc Ninh (5 chiều + total), Bắc Giang (một số chiều);
+     2023 Bình Dương, Quảng Ninh (cả năm); 2024 Tiền Giang, Vĩnh Phúc (cả năm).
+   - Đối chiếu thêm: khớp 100% với bảng sạch của bộ Hugging Face (_extra/papi_hf_clean_panel/provinces_long.csv),
+     trừ 2024 Tiền Giang/Vĩnh Phúc mà bộ đó ghi 0 thay vì thiếu.
+   - Trong bài: trích dẫn báo cáo PAPI chính thức của từng năm sử dụng.
+   - Tên tỉnh: giữ như file gốc — 2018–2019 không dấu tiếng Anh ("Ho Chi Minh City"), 2020+ có dấu
+     (notebook chuẩn hoá); dùng province_code_pre2025 để ghép chắc chắn hơn.
+
+2) dti.csv  (province, year, dti_total, dti_gov, dti_econ, dti_soc + thứ hạng)  — 2020–2023, 63 tỉnh
+   dti_2024_63.csv (DTI 2024 tổng, 63 tỉnh cũ, thứ hạng 63)
+   dti_2024_34.csv (DTI 2024 tổng, 34 tỉnh mới, thứ hạng 34; = trung bình DTI các tỉnh trước sáp nhập)
+   - Nguồn: https://dti.gov.vn (Bộ KH&CN), trang chủ, mục "Tổng thể xếp hạng chỉ số chuyển đổi số cấp tỉnh".
+     Bảng được nhúng cứng trong file JS của trang; bản chụp lưu tại raw/dti/dti.gov.vn_nuxt_0e85465_2026-09-25.js
+   - Xử lý: scripts/build_dti.py. Thang 0–1 như công bố. CQS = chính quyền số (dti_gov), KTS = kinh tế số (dti_econ),
+     XHS = xã hội số (dti_soc).
+   - Kiểm tra: trung bình tỉnh 2022 = 0,5787 và 2023 = 0,6783, trụ cột 2023 = 0,7506/0,7240/0,6817,
+     khớp số liệu MST công bố; thứ hạng 2023 của Lạng Sơn (4), Hà Nội (6), Quảng Ngãi (21) khớp tin báo chí.
+   - 2024 theo 3 trụ cột (bổ sung 2026-09-26): trang dti.gov.vn/rating/2024-all -> dti_2024_63.csv có thêm
+     dti_gov, dti_econ, dti_soc (+ thứ hạng). Trung bình 63 tỉnh = 0,6961 / 0,7582 / 0,7723 / 0,7692, trùng khớp
+     số liệu MST công bố ngày 21/10/2025. dti_2024_34.csv (34 tỉnh mới) vẫn chỉ có điểm tổng như bản công bố.
+
+2b) dti_indicators.csv — 8 chỉ số chính + tổng PDTI, 63 tỉnh, 2022–2024 (0–1)
+   - Cột: nhan_thuc_so, the_che_so, ha_tang_so, nhan_luc_so, an_toan_thong_tin, hd_chinh_quyen_so,
+     hd_kinh_te_so, hd_xa_hoi_so, dti_total, rank.
+   - Nguồn: dti.gov.vn/rating/2022, /rating/2023, /rating/2024-all (bảng "xếp hạng theo nhóm tiêu chí");
+     bản chụp file JS: raw/dti/*rating*.js. Script: scripts/build_dti_indicators.py.
+   - Năm của mỗi bảng được xác định bằng cách khớp cột tổng với dti.csv/dti_2024_63.csv (khớp 100%),
+     vì tiêu đề trang không luôn đúng năm số liệu. Không có bảng chỉ số chính cho 2020–2021.
+
+3) controls.csv  (province, year, pop, urban_share, grdp_pc, internet_share) — 63 tỉnh, 2017–2025
+   - Nguồn: Cục Thống kê (NSO, trước là GSO), cơ sở dữ liệu PX-Web https://pxweb.nso.gov.vn
+     * V02.03-07 "Dân số trung bình phân theo địa phương, giới tính và thành thị nông thôn" (API)
+       -> pop (nghìn người), urban_share = thành thị / tổng
+     * V03.12 "Tổng sản phẩm trên địa bàn bình quân đầu người phân theo địa phương" (web PX, JSON-stat)
+       -> grdp_pc (triệu đồng/người, giá hiện hành)
+     Raw: raw/nso/*.json. Xử lý: scripts/build_controls.py.
+     * V14.65 "Tỷ lệ người sử dụng internet phân theo địa phương" -> internet_share (0–1)
+     * V14.67 "Tỷ lệ hộ gia đình có kết nối internet phân theo địa phương" -> hh_internet_share (0–1)
+       (CSDL "Y tế, văn hóa và MSDC", web PX, JSON-stat)
+   - Năm 2025 là số sơ bộ/ước tính; GRDP 2024 là sơ bộ. GRDP/người không có năm 2017 trong bảng.
+   - internet_share, hh_internet_share: NSO chỉ công bố cấp tỉnh cho 2024 và 2025 (63 tỉnh cũ); 2017–2023 để trống.
+   - Tên tỉnh được chuẩn hoá giữa các bảng (hàm norm_prov: khoảng trắng, "Ð"->"Đ", "Hoà"->"Hòa",
+     "TP. Hồ Chí Minh", "Thừa Thiên Huế"->"Huế").
+
+4a) province_merger_map_63_to_34.csv  (province_old, province_new, nq202_clause, merged, area_km2_new, pop_new)
+   - Nguồn: Nghị quyết 202/2025/QH15 ngày 12/6/2025 của Quốc hội, Điều 1 (khoản 1–23: sáp nhập; khoản 24:
+     11 tỉnh/thành không sắp xếp). Bản chính thức (scan, 5 trang) từ Tư liệu Văn kiện Đảng
+     -> raw/nq202/NQ-202-2025-QH15_tulieuvankien.pdf; chép từ ảnh trang (2026-09-29).
+   - area_km2_new, pop_new = diện tích, dân số của tỉnh mới theo Nghị quyết (để trống cho tỉnh không sắp xếp).
+   - Kiểm tra: khớp 63/63 với bảng đối chiếu từ PAPI 2024 và DTI 2024 (mục 4b).
+   - Tên tỉnh cũ viết theo kiểu hành chính ("Hồ Chí Minh", "Huế", "Hòa Bình"); notebook chuẩn hoá tên.
+
+4b) _extra/province_merger_map_63_to_34_from_PAPI_DTI.csv  (bảng đối chiếu độc lập)
+   - Ghép tỉnh cũ -> mới theo 2 nguồn độc lập: dòng tiêu đề của workbook PAPI 2024 và bảng DTI 2024.
+     Hai nguồn khớp 63/63 (cột agree). Dùng để rà lại province_merger_map_63_to_34.csv (NQ 202/2025/QH15).
+   - Tạo bởi scripts/build_merger_crosscheck.py.
+
+5) geo/geoBoundaries-VNM-ADM1_simplified.geojson  (tuỳ chọn, bản đồ)
+   - geoBoundaries gbOpen VNM ADM1 (commit 9469f09), Public Domain, ranh giới năm 2008, 64 đơn vị
+     (Côn Đảo tách riêng khỏi Bà Rịa–Vũng Tàu). Metadata: geo/geoBoundaries_VNM_ADM1_meta.json

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this replication package, please cite the manuscript and this repository.
+title: "Replication package: Digital government readiness and citizen experience under changing provincial boundaries (Viet Nam PAPI x DTI)"
+authors:
+  - family-names: Bui Ngoc
+    given-names: Hien
+  - family-names: Cao Van
+    given-names: Thong
+  - family-names: Le Ngoc
+    given-names: Hieu
+type: software
+license: MIT
+repository-code: https://github.com/REPLACE_ME/papi-dti-merger
+abstract: >
+  Replication code and analysis-ready data linking Viet Nam's provincial Digital
+  Transformation Index (DTI) to PAPI e-governance components for 2020-2024, with
+  variance decomposition under the 2025 63-to-34 provincial merger.
+keywords:
+  - digital government
+  - PAPI
+  - DTI
+  - territorial amalgamation
+  - Viet Nam

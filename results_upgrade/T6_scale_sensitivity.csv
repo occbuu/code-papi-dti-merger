@@ -1,0 +1,9 @@
+﻿outcome,offset,metric,within_share
+egovernance,-1,variance,0.14097281655407243
+egovernance,-1,theil,0.14894658670061042
+egovernance,0,variance,0.14097281655407198
+egovernance,0,theil,0.1463469467622092
+egovernance,1,variance,0.14097281655407198
+egovernance,1,theil,0.1450237564609988
+egovernance,5,variance,0.14097281655407237
+egovernance,5,theil,0.14301175828641763

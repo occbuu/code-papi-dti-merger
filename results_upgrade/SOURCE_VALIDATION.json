@@ -1,0 +1,18 @@
+{
+  "PAPI": {
+    "rows": 2835,
+    "observed": 2762,
+    "max_difference": 7.105427357601002e-15
+  },
+  "DTI": {
+    "rows": 315,
+    "matched": 315,
+    "note": "Scores and province labels checked; year assignment follows source inventory, not inferred from equal values."
+  },
+  "controls": {
+    "rows": 315,
+    "max_population_difference": 0.0,
+    "max_urban_share_difference": 4.9967853928301054e-05,
+    "max_grdp_difference": 1.4210854715202004e-14
+  }
+}

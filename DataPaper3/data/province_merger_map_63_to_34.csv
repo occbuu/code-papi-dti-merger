@@ -1,0 +1,64 @@
+province_old,province_new,nq202_clause,merged,area_km2_new,pop_new
+Hà Giang,Tuyên Quang,1,1,13795.50,1865270
+Tuyên Quang,Tuyên Quang,1,1,13795.50,1865270
+Yên Bái,Lào Cai,2,1,13256.92,1778785
+Lào Cai,Lào Cai,2,1,13256.92,1778785
+Bắc Kạn,Thái Nguyên,3,1,8375.21,1799489
+Thái Nguyên,Thái Nguyên,3,1,8375.21,1799489
+Vĩnh Phúc,Phú Thọ,4,1,9361.38,4022638
+Hòa Bình,Phú Thọ,4,1,9361.38,4022638
+Phú Thọ,Phú Thọ,4,1,9361.38,4022638
+Bắc Giang,Bắc Ninh,5,1,4718.60,3619433
+Bắc Ninh,Bắc Ninh,5,1,4718.60,3619433
+Thái Bình,Hưng Yên,6,1,2514.81,3567943
+Hưng Yên,Hưng Yên,6,1,2514.81,3567943
+Hải Phòng,Hải Phòng,7,1,3194.72,4664124
+Hải Dương,Hải Phòng,7,1,3194.72,4664124
+Hà Nam,Ninh Bình,8,1,3942.62,4412264
+Nam Định,Ninh Bình,8,1,3942.62,4412264
+Ninh Bình,Ninh Bình,8,1,3942.62,4412264
+Quảng Bình,Quảng Trị,9,1,12700.00,1870845
+Quảng Trị,Quảng Trị,9,1,12700.00,1870845
+Đà Nẵng,Đà Nẵng,10,1,11859.59,3065628
+Quảng Nam,Đà Nẵng,10,1,11859.59,3065628
+Kon Tum,Quảng Ngãi,11,1,14832.55,2161755
+Quảng Ngãi,Quảng Ngãi,11,1,14832.55,2161755
+Bình Định,Gia Lai,12,1,21576.53,3583693
+Gia Lai,Gia Lai,12,1,21576.53,3583693
+Ninh Thuận,Khánh Hòa,13,1,8555.86,2243554
+Khánh Hòa,Khánh Hòa,13,1,8555.86,2243554
+Đắk Nông,Lâm Đồng,14,1,24233.07,3872999
+Bình Thuận,Lâm Đồng,14,1,24233.07,3872999
+Lâm Đồng,Lâm Đồng,14,1,24233.07,3872999
+Phú Yên,Đắk Lắk,15,1,18096.40,3346853
+Đắk Lắk,Đắk Lắk,15,1,18096.40,3346853
+Hồ Chí Minh,Hồ Chí Minh,16,1,6772.59,14002598
+Bà Rịa - Vũng Tàu,Hồ Chí Minh,16,1,6772.59,14002598
+Bình Dương,Hồ Chí Minh,16,1,6772.59,14002598
+Bình Phước,Đồng Nai,17,1,12737.18,4491408
+Đồng Nai,Đồng Nai,17,1,12737.18,4491408
+Long An,Tây Ninh,18,1,8536.44,3254170
+Tây Ninh,Tây Ninh,18,1,8536.44,3254170
+Cần Thơ,Cần Thơ,19,1,6360.83,4199824
+Sóc Trăng,Cần Thơ,19,1,6360.83,4199824
+Hậu Giang,Cần Thơ,19,1,6360.83,4199824
+Bến Tre,Vĩnh Long,20,1,6296.20,4257581
+Trà Vinh,Vĩnh Long,20,1,6296.20,4257581
+Vĩnh Long,Vĩnh Long,20,1,6296.20,4257581
+Tiền Giang,Đồng Tháp,21,1,5938.64,4370046
+Đồng Tháp,Đồng Tháp,21,1,5938.64,4370046
+Bạc Liêu,Cà Mau,22,1,7942.39,2606672
+Cà Mau,Cà Mau,22,1,7942.39,2606672
+Kiên Giang,An Giang,23,1,9888.91,4952238
+An Giang,An Giang,23,1,9888.91,4952238
+Cao Bằng,Cao Bằng,24,0,,
+Điện Biên,Điện Biên,24,0,,
+Hà Tĩnh,Hà Tĩnh,24,0,,
+Lai Châu,Lai Châu,24,0,,
+Lạng Sơn,Lạng Sơn,24,0,,
+Nghệ An,Nghệ An,24,0,,
+Quảng Ninh,Quảng Ninh,24,0,,
+Thanh Hóa,Thanh Hóa,24,0,,
+Sơn La,Sơn La,24,0,,
+Hà Nội,Hà Nội,24,0,,
+Huế,Huế,24,0,,
